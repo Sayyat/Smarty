@@ -11,7 +11,7 @@ export default async function handler(req, res) {
 
     console.log({phoneNumber, firstname, lastname})
 
-    const status = await register(phoneNumber, firstname, lastname)
-    res.status(status ? 200 : 400).json({phoneNumber, firstname, lastname})
+    const result = await register(phoneNumber, firstname, lastname)
+    res.status(200).json(result)
 
 }
