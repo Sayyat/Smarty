@@ -6,7 +6,7 @@ export default async function handler(req, res) {
     if (typeof body === "string")
         body = JSON.parse(body)
 
-    console.log(body)
+    // console.log(body)
 
     const result = await uploadImage(body)
     res.status(200).json(result)

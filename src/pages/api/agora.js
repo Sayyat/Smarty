@@ -25,7 +25,7 @@ export default function handler(req, res) {
         return
     }
 
-    console.log({appId, certificate, channel, uid})
+    // console.log({appId, certificate, channel, uid})
     const tokenA = RtcTokenBuilder.buildTokenWithUid(
         appId,
         certificate,
