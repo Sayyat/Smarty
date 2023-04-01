@@ -10,7 +10,6 @@ export default async function handler(req, res) {
     res.status(200).json(result)
 }
 
-
 async function sendMessage(username, password, to, message){
     console.log({username, password, to, message})
     // get request
